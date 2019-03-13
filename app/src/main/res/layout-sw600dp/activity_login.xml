@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/login_bg_" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/login_bg_back" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginTop="@dimen/dp70"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_ellipse_login" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp150"
+                    android:layout_height="@dimen/dp150"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/dp25"
+                    android:src="@drawable/sidebar_logo" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/dp15">
+
+            <com.common.view.CTextView
+                style="@style/txt_000_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:gravity="center"
+                android:text="Sign in"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/sp18" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.common.view.CEditTextView
+                    style="@style/txt_999_18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:background="@drawable/ic_rectangle_1"
+                    android:hint="Username"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="@dimen/dp20"
+                    android:textColor="@color/txt_color" />
+
+                <com.common.view.CEditTextView
+                    style="@style/txt_999_18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@drawable/ic_rectangle_1"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/dp20"
+                    android:textColor="@color/txt_color" />
+
+
+                <com.common.view.CBButtonViewM
+                    android:id="@+id/btnSignIn"
+                    style="@style/LightFlatWaveColorButtonRippleStyle_22"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:background="@drawable/btn_bg_"
+                    android:text="SIGN IN"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp18" />
+
+                <com.common.view.CTextView
+                    android:id="@+id/tvForgotPass"
+                    style="@style/txt_999_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:gravity="center"
+                    android:text="Forgot Password?"
+                    android:textColor="#403838" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <include layout="@layout/topbar" />
+
+            </FrameLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp10"
+                android:orientation="horizontal">
+
+                <com.common.view.CBTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/dp10"
+                    android:text="In Preparation / Orderd"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/sp12" />
+
+                <com.common.view.CBTextView
+                    android:id="@+id/btnSelectMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:background="@drawable/round_border_primary"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingTop="@dimen/dp5"
+                    android:paddingRight="@dimen/dp10"
+                    android:paddingBottom="@dimen/dp5"
+                    android:text="SELECT MORE"
+                    android:textSize="@dimen/sp10" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="@dimen/dp5"
+                android:background="#EBEAEA" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvCartServed"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp12"
+                            android:layout_marginRight="@dimen/dp12"
+                            android:nestedScrollingEnabled="false" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <com.common.view.CBButtonViewM
+                                    android:id="@+id/btnAllServed"
+                                    style="@style/LightFlatWaveColorButtonRippleStyle_22"
+                                    android:layout_width="@dimen/dp100"
+                                    android:layout_height="@dimen/dp30"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="@dimen/dp10"
+                                    android:background="@drawable/btn_bg_"
+                                    android:gravity="center"
+                                    android:text="All Served"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp10" />
+
+                                <com.common.view.CBButtonViewM
+                                    android:id="@+id/btnConfirmOrder"
+                                    style="@style/LightFlatWaveColorButtonRippleStyle_22"
+                                    android:layout_width="@dimen/dp100"
+                                    android:layout_height="@dimen/dp30"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/dp10"
+                                    android:background="@drawable/btn_bg_"
+                                    android:gravity="center"
+                                    android:text="Confirm Order"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/sp10"
+                                    android:visibility="invisible" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp12"
+                                android:layout_marginRight="@dimen/dp12"
+                                android:orientation="vertical">
+
+                                <com.common.view.CTextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingTop="@dimen/dp10"
+                                    android:paddingBottom="@dimen/dp10"
+                                    android:text="Served :"
+                                    android:textColor="@color/primary"
+                                    android:textSize="@dimen/sp14" />
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_marginBottom="@dimen/dp5"
+                                    android:background="#F0EFEF" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvServedList"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp12"
+                            android:layout_marginRight="@dimen/dp12"
+                            android:nestedScrollingEnabled="false"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <include layout="@layout/cart_bottomview" />
+</LinearLayout>

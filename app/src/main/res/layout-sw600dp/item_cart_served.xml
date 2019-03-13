@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:numberpicker="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp2"
+    android:layout_marginRight="@dimen/dp2"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="@dimen/dp70"
+                    android:layout_height="@dimen/dp70"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/dp6"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardPreventCornerOverlap="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/img_dummy_res" />
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="@dimen/dp18"
+                android:layout_height="@dimen/dp18"
+                android:background="@drawable/primary_round"
+                android:padding="@dimen/dp2"
+                android:src="@drawable/ic_cross" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.common.view.CBTextView
+                style="@style/txt_000_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manchow Soup"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/sp18" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:orientation="horizontal">
+
+            <com.common.view.CTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_light"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp4"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp4"
+                android:text="Less Spicy"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/sp9" />
+
+            <com.common.view.CTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5"
+                android:background="@color/gray_light"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp4"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp4"
+                android:text="Less Spicy"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/sp9"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp8">
+
+        <LinearLayout
+            android:id="@+id/llNumberPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.travijuu.numberpicker.library.NumberPicker
+                android:id="@+id/numberPickerQty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp5"
+                app:custom_layout="@layout/number_picker_horisamall"
+                numberpicker:focusable="false"
+                numberpicker:min="1"
+                numberpicker:unit="1"
+                numberpicker:value="-5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_intersection_3"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_dinner" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

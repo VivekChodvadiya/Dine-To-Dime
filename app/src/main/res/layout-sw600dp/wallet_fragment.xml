@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/dp20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.common.view.CEditTextView
+            style="@style/txt_999_18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/ic_rectangle_1"
+            android:hint="Search"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="@dimen/dp20"
+            android:textColor="@color/txt_color" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.common.view.CBTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:text="₹540"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/sp15" />
+
+            <ImageView
+                android:layout_width="@dimen/dp10"
+                android:layout_height="@dimen/dp10"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp5"
+                android:src="@drawable/ic_checked_filled" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp15">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp5">
+
+            <RadioButton
+                android:id="@+id/rbPaytm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/primary" />
+
+            <ImageView
+                android:layout_width="@dimen/dp15"
+                android:layout_height="@dimen/dp15"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp5"
+                android:src="@mipmap/ic_paytm" />
+
+
+            <com.common.view.CTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PayTM"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp5">
+
+            <RadioButton
+                android:id="@+id/rbPhonePay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/primary" />
+
+            <ImageView
+                android:layout_width="@dimen/dp15"
+                android:layout_height="@dimen/dp15"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp5"
+                android:src="@mipmap/ic_phonepe" />
+
+            <com.common.view.CTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Pay"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp5">
+
+            <RadioButton
+                android:id="@+id/rbFreeCharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/primary" />
+
+            <ImageView
+                android:layout_width="@dimen/dp15"
+                android:layout_height="@dimen/dp15"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp5"
+                android:src="@mipmap/ic_freecharge" />
+
+            <com.common.view.CTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FreeCharge"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:padding="@dimen/dp5">
+
+            <RadioButton
+                android:id="@+id/rbMobikwik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/primary" />
+
+            <ImageView
+                android:layout_width="@dimen/dp15"
+                android:layout_height="@dimen/dp15"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp5"
+                android:src="@mipmap/ic_mobikwik" />
+
+            <com.common.view.CTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobikwik"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+

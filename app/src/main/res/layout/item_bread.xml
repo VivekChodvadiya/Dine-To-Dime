@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/dp5"
+    android:paddingBottom="@dimen/dp5">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:buttonTint="@color/primary"
+        android:layout_height="wrap_content" />
+
+    <com.common.view.CTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp10"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="Italian Bread" />
+
+</LinearLayout>

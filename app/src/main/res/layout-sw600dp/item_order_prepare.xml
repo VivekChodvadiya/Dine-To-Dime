@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:numberpicker="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp60"
+            android:layout_margin="@dimen/dp8"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardPreventCornerOverlap="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/img_dummy_res" />
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/dp5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.common.view.CBTextView
+                        style="@style/txt_000_18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Manchow Soup"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/sp18" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/dp2"
+                        android:src="@mipmap/ic_veg" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.common.view.CTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:background="@color/gray_light"
+                        android:paddingLeft="@dimen/dp10"
+                        android:paddingTop="@dimen/dp4"
+                        android:paddingRight="@dimen/dp10"
+                        android:paddingBottom="@dimen/dp4"
+                        android:text="Less Spicy"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/sp9" />
+
+                    <com.common.view.CTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:background="@color/gray_light"
+                        android:paddingLeft="@dimen/dp10"
+                        android:paddingTop="@dimen/dp4"
+                        android:paddingRight="@dimen/dp10"
+                        android:paddingBottom="@dimen/dp4"
+                        android:text="No Onions"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/sp9" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:orientation="horizontal">
+
+
+                    <com.common.view.CBButtonViewM
+                        style="@style/LightFlatWaveColorButtonRippleStyle_22"
+                        android:layout_width="@dimen/dp80"
+                        android:layout_height="@dimen/dp25"
+                        android:layout_marginLeft="@dimen/dp2"
+                        android:background="@drawable/primary_round"
+                        android:paddingTop="@dimen/dp4"
+                        android:paddingBottom="@dimen/dp4"
+                        android:text="Preparing"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp7" />
+
+                    <com.common.view.CBButtonViewM
+                        style="@style/LightFlatWaveColorButtonRippleStyle_22"
+                        android:layout_width="@dimen/dp80"
+                        android:layout_height="@dimen/dp25"
+                        android:layout_marginLeft="@dimen/dp2"
+                        android:background="@drawable/primary_round"
+                        android:paddingTop="@dimen/dp4"
+                        android:paddingBottom="@dimen/dp4"
+                        android:text="Preparing"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp7" />
+
+                    <com.common.view.CBButtonViewM
+                        style="@style/LightFlatWaveColorButtonRippleStyle_22"
+                        android:layout_width="@dimen/dp80"
+                        android:layout_height="@dimen/dp25"
+                        android:layout_marginLeft="@dimen/dp2"
+                        android:background="@drawable/primary_round"
+                        android:paddingTop="@dimen/dp4"
+                        android:paddingBottom="@dimen/dp4"
+                        android:text="Preparing"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp7" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/dp8">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_rectangle_11"
+                        android:gravity="center"
+                        android:padding="@dimen/dp4">
+
+                        <com.common.view.CTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 3 "
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp12" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginBottom="@dimen/dp10"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dp4">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp10"
+                            android:layout_height="@dimen/dp10"
+                            android:src="@drawable/ic_checked" />
+
+                        <com.common.view.CTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp5"
+                            android:text="In Dine"
+                            android:textColor="#37E15F"
+                            android:textSize="@dimen/sp8" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="@dimen/dp4">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp20"
+                            android:layout_height="@dimen/dp20"
+                            android:src="@drawable/ic_bell" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/llNumberPicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.travijuu.numberpicker.library.NumberPicker
+                        android:id="@+id/numberPickerQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:custom_layout="@layout/number_picker_hori"
+                        numberpicker:focusable="false"
+                        numberpicker:min="1"
+                        numberpicker:unit="1"
+                        numberpicker:value="-5" />
+
+                    <com.common.view.CTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="Add to Cart"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/sp10" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginBottom="@dimen/dp5"
+            android:background="#F0EFEF" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.common.view.CTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Table No. 4 (Ground Fl.)" />
+
+            <com.common.view.CTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp8"
+                android:text="Manoj Tiwari" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

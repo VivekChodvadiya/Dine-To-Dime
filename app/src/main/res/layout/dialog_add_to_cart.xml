@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:background="@drawable/round_dialog_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/dp10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.common.view.CBTextView
+                    style="@style/txt_000_18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/dp10"
+                    android:text="Tuna Sub"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sp18" />
+
+                <com.common.view.CBTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹ 310"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/sp12" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginBottom="@dimen/dp5"
+                android:background="#EBEAEA" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/dp10"
+                        android:paddingBottom="@dimen/dp10">
+
+                        <com.common.view.CTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bread"
+                            android:textColor="@color/primary"
+                            android:textSize="@dimen/sp16" />
+
+                        <com.common.view.CTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(Please select any one option)"
+                            android:textSize="@dimen/sp9" />
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvBread"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/dp10"
+                        android:paddingBottom="@dimen/dp10">
+
+                        <com.common.view.CTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bread"
+                            android:textColor="@color/primary"
+                            android:textSize="@dimen/sp16" />
+
+                        <com.common.view.CTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(You can choose any option)"
+                            android:textSize="@dimen/sp9" />
+                    </LinearLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvExtras"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.7dp"
+                        android:layout_marginBottom="@dimen/dp5"
+                        android:background="#EBEAEA" />
+
+
+                    <com.common.view.CTextView
+                        style="@style/txt_000_18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dp10"
+                        android:text="Remarks"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/sp18" />
+
+                    <com.common.view.CEditTextView
+                        style="@style/txt_999_18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_rectangle_1"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/dp20"
+                        android:textColor="@color/txt_color" />
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+        </LinearLayout>
+
+        <com.common.view.CBButtonViewM
+            android:id="@+id/btnAddToCart"
+            style="@style/LightFlatWaveColorButtonRippleStyle_22"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginTop="@dimen/dp15"
+            android:layout_marginBottom="@dimen/dp10"
+            android:background="@drawable/btn_bg_"
+            android:text="Save Variations"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18" />
+    </LinearLayout>
+</LinearLayout>

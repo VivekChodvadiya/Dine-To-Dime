@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <include layout="@layout/topbar" />
+
+        </FrameLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/llPlaceHolderTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingTop="@dimen/dp10"
+                    android:paddingBottom="@dimen/dp10">
+
+                    <com.common.view.CBTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Combos"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/sp19" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+                        <com.common.view.CBTextView
+                            android:id="@+id/btnSelectMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:background="@drawable/round_border_primary"
+                            android:paddingLeft="@dimen/dp10"
+                            android:paddingTop="@dimen/dp5"
+                            android:paddingRight="@dimen/dp10"
+                            android:paddingBottom="@dimen/dp5"
+                            android:text="SELECT MORE ITEMS"
+                            android:textSize="@dimen/sp7" />
+
+                        <com.common.view.CBTextView
+                            android:id="@+id/btnSelectMoreCombos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:background="@drawable/round_border_primary"
+                            android:paddingLeft="@dimen/dp10"
+                            android:paddingTop="@dimen/dp5"
+                            android:paddingRight="@dimen/dp10"
+                            android:paddingBottom="@dimen/dp5"
+                            android:text="SELECT MORE COMBOS"
+                            android:textSize="@dimen/sp7" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1"
+                    android:layout_marginTop="@dimen/dp2"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:background="#F0EFEF" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvSelectMoreCombosSecond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.common.view.CBButtonViewM
+                android:id="@+id/btnConfirm"
+                style="@style/LightFlatWaveColorButtonRippleStyle_22"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp40"
+                android:layout_marginLeft="@dimen/dp24"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@drawable/btn_bg_"
+                android:paddingLeft="@dimen/dp24"
+                android:paddingRight="@dimen/dp24"
+                android:text="CONFIRM"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp18"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.common.view.CBButtonViewM
+                android:id="@+id/btnBack"
+                style="@style/LightFlatWaveColorButtonRippleStyle_22"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp25"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/btn_bg_"
+                android:text="back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp14" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

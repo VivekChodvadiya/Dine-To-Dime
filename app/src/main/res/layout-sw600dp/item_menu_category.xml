@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp10">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp150"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/menu_unsplash" />
+
+    <com.common.view.CTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Combo Selection"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/sp19" />
+
+</FrameLayout>

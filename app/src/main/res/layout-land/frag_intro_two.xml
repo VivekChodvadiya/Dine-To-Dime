@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<agency.tango.materialintroscreen.parallax.ParallaxLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/onboarding__screen_land_2" />
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_marginLeft="@dimen/dp10"-->
+    <!--android:layout_marginRight="@dimen/dp10"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_marginLeft="@dimen/dp10"-->
+    <!--android:layout_marginTop="@dimen/dp20"-->
+    <!--android:layout_marginRight="@dimen/dp10"-->
+    <!--android:layout_marginBottom="@dimen/dp10"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:src="@drawable/last_board_2" />-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dp80"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:background="#8F0A0A"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<com.common.view.CTextView-->
+    <!--style="@style/txt_fff_18"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="@dimen/dp5"-->
+    <!--android:text="Tables" />-->
+
+    <!--<com.common.view.CTextView-->
+    <!--style="@style/txt_fff_18"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="@dimen/dp5"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="@dimen/dp10"-->
+    <!--android:text="Don't Worry about Seating, We have got all your tables Sorted" />-->
+
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+
+</agency.tango.materialintroscreen.parallax.ParallaxLinearLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_dialog_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/dp10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayoutMakepayment"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp25"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_marginBottom="@dimen/dp5"
+                android:clipToPadding="false"
+                android:elevation="@dimen/dp3"
+                android:minHeight="?attr/actionBarSize"
+                app:tabBackground="@drawable/tab_selecter"
+                app:tabGravity="center"
+                app:tabIndicator="@null"
+                app:tabIndicatorHeight="0dp"
+                app:tabMode="scrollable"
+                app:tabPaddingEnd="@dimen/dp5"
+                app:tabPaddingStart="@dimen/dp5"
+                app:tabSelectedTextColor="@color/white"
+                app:tabTextAppearance="@style/txt_333_14" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginTop="@dimen/dp2"
+                android:layout_marginBottom="@dimen/dp5"
+                android:background="#F0EFEF" />
+
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pagerMakepayment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp250"
+            android:nestedScrollingEnabled="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="@dimen/dp10">
+
+            <com.common.view.CBTextView
+                android:id="@+id/llCash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/primary_round"
+                android:paddingLeft="@dimen/dp15"
+                android:paddingTop="@dimen/dp5"
+                android:paddingRight="@dimen/dp15"
+                android:paddingBottom="@dimen/dp5"
+                android:text="Cash"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp12" />
+
+            <com.common.view.CBTextView
+                android:id="@+id/llCard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:paddingLeft="@dimen/dp15"
+                android:paddingTop="@dimen/dp5"
+                android:paddingRight="@dimen/dp15"
+                android:paddingBottom="@dimen/dp5"
+                android:text="Card"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/sp12" />
+
+            <com.common.view.CBTextView
+                android:id="@+id/llWallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp15"
+                android:paddingTop="@dimen/dp5"
+                android:paddingRight="@dimen/dp15"
+                android:paddingBottom="@dimen/dp5"
+                android:text="Wallet"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/sp12" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp1"
+            android:layout_marginTop="@dimen/dp2"
+            android:layout_marginBottom="@dimen/dp5"
+            android:background="#F0EFEF" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llCardPart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/card_fragment" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llCashPart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <include layout="@layout/cash_fragment" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llWalletPart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <include layout="@layout/wallet_fragment" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+
+    <com.common.view.CBButtonViewM
+        android:id="@+id/btnMakePaymentDone"
+        style="@style/LightFlatWaveColorButtonRippleStyle_22"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp30"
+        android:layout_marginBottom="@dimen/dp10"
+        android:background="@drawable/btn_bg_"
+        android:text="Done"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18" />
+</LinearLayout>

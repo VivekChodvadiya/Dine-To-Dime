@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:numberpicker="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp2"
+    android:layout_marginRight="@dimen/dp2"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="@dimen/dp70"
+                    android:layout_height="@dimen/dp70"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/dp6"
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardPreventCornerOverlap="true">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/img_dummy_res" />
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="@dimen/dp18"
+                android:layout_height="@dimen/dp18"
+                android:background="@drawable/primary_round"
+                android:padding="@dimen/dp4"
+                android:src="@drawable/ic_cross" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dp4"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.common.view.CBTextView
+                style="@style/txt_000_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Combo 2 (Limited)"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/sp18" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/dp2"
+                android:src="@mipmap/ic_veg" />
+        </LinearLayout>
+
+        <com.common.view.CTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Garlic Bread + Veg Sandwich + 3 types of Pizza+ 8 Salads + Cold drinks (200ml)"
+            android:textColor="@color/primary"
+            android:textSize="@dimen/sp10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5">
+
+            <com.common.view.CTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 120"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/sp18" />
+
+
+            <ImageView
+                android:layout_width="@dimen/dp18"
+                android:layout_height="@dimen/dp18"
+                android:layout_marginLeft="@dimen/dp4"
+                android:src="@drawable/ic_info_outline_red_24dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/dp8">
+
+        <LinearLayout
+            android:id="@+id/llAddQty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <com.common.view.CTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Add"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/sp18" />
+
+            <ImageView
+                android:layout_width="@dimen/dp28"
+                android:layout_height="@dimen/dp28"
+                android:layout_marginLeft="@dimen/dp4"
+                android:src="@drawable/ic_add_box_black_24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llNumberPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.travijuu.numberpicker.library.NumberPicker
+                android:id="@+id/numberPickerQty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:custom_layout="@layout/number_picker_horisamall"
+                numberpicker:focusable="false"
+                numberpicker:min="1"
+                numberpicker:unit="1"
+                numberpicker:value="-5" />
+
+            <com.common.view.CTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Add to Cart"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/sp10"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

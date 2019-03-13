@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_dialog_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/dp10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:orientation="vertical">
+
+        <com.common.view.CBTextView
+            style="@style/txt_000_18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="Table No 1"
+            android:textSize="@dimen/sp18" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="@dimen/dp5"
+            android:background="#EBEAEA" />
+
+        <com.common.view.CTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:text="Enter no of person that enjoy healthy food on table."
+            android:textColor="@color/primary"
+            android:textSize="@dimen/sp14" />
+
+        <com.common.view.CEditTextView
+            android:id="@+id/editNoPerson"
+            style="@style/txt_999_18"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp48"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@drawable/ic_rectangle_1"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="No of Person"
+            android:inputType="textEmailAddress"
+            android:longClickable="false"
+            android:paddingLeft="@dimen/dp20"
+            android:textColor="@color/txt_color" />
+
+        <com.common.view.CBButtonViewM
+            android:id="@+id/btnOccupied"
+            style="@style/LightFlatWaveColorButtonRippleStyle_22"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp48"
+            android:layout_marginTop="@dimen/dp30"
+            android:layout_marginBottom="@dimen/dp10"
+            android:background="@drawable/btn_bg_"
+            android:text="OCCUPIED"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18" />
+    </LinearLayout>
+</LinearLayout>

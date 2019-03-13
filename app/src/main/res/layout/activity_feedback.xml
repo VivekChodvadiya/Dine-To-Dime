@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <include layout="@layout/topbar" />
+
+        </FrameLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.common.view.CTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:text="Thank you for spending your precious time at our outlet.
+We seek your suggestions to serve you better and request you to rate us on the following. "
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/sp12" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp25">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp3"
+                        android:layout_marginRight="@dimen/dp3"
+                        android:orientation="vertical">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:orientation="horizontal">
+
+                            <com.common.view.CBTextView
+                                style="@style/txt_000_12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp20"
+                                android:layout_marginTop="@dimen/dp2"
+                                android:layout_marginBottom="@dimen/dp2"
+                                android:layout_weight="1.8"
+                                android:background="@color/white"
+                                android:paddingTop="@dimen/dp8"
+                                android:paddingBottom="@dimen/dp8"
+                                android:text="Services"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/sp12" />
+
+                            <com.common.view.CBTextView
+                                style="@style/txt_000_12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp2"
+                                android:layout_marginBottom="@dimen/dp2"
+                                android:layout_weight="0.7"
+                                android:background="@color/white"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/dp8"
+                                android:paddingBottom="@dimen/dp8"
+                                android:text="Excellent"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/sp8" />
+
+                            <com.common.view.CBTextView
+                                style="@style/txt_000_12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp2"
+                                android:layout_marginBottom="@dimen/dp2"
+                                android:layout_weight="0.7"
+                                android:background="@color/white"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/dp8"
+                                android:paddingBottom="@dimen/dp8"
+                                android:text="Good"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/sp8" />
+
+                            <com.common.view.CBTextView
+                                style="@style/txt_000_12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp2"
+                                android:layout_marginBottom="@dimen/dp2"
+                                android:layout_weight="0.7"
+                                android:background="@color/white"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/dp8"
+                                android:paddingBottom="@dimen/dp8"
+                                android:text="Average"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/sp8" />
+
+                            <com.common.view.CBTextView
+                                style="@style/txt_000_12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dp2"
+                                android:layout_marginBottom="@dimen/dp2"
+                                android:layout_weight="0.7"
+                                android:background="@color/white"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/dp8"
+                                android:paddingBottom="@dimen/dp8"
+                                android:text="Dissatisfied"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/sp8" />
+
+                        </TableRow>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp1"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:layout_marginBottom="@dimen/dp5"
+                            android:background="#F0EFEF" />
+
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#FCFBFB"
+                            android:orientation="horizontal">
+
+                            <com.common.view.CBTextView
+                                style="@style/txt_000_12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp20"
+                                android:layout_marginTop="@dimen/dp2"
+                                android:layout_marginBottom="@dimen/dp2"
+                                android:layout_weight="4"
+                                android:paddingTop="@dimen/dp8"
+                                android:paddingBottom="@dimen/dp8"
+                                android:text="Overall Service Quality"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/sp10" />
+
+
+                            <RadioGroup
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+                                    android:buttonTint="@color/primary"
+                                    android:gravity="center" />
+
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+
+                                    android:buttonTint="@color/primary"
+                                    android:gravity="center" />
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+                                    android:buttonTint="@color/primary"
+                                    android:gravity="center" />
+
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+                                    android:buttonTint="@color/primary"
+                                    android:gravity="center" />
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:background="#FCFBFB"
+                            android:orientation="horizontal">
+
+                            <com.common.view.CBTextView
+                                style="@style/txt_000_12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp20"
+                                android:layout_marginTop="@dimen/dp2"
+                                android:layout_marginBottom="@dimen/dp2"
+                                android:layout_weight="4"
+                                android:paddingTop="@dimen/dp8"
+                                android:paddingBottom="@dimen/dp8"
+                                android:text="Cleanliness"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/sp10" />
+
+
+                            <RadioGroup
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+                                    android:buttonTint="@color/primary"
+                                    android:gravity="center" />
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+
+                                    android:buttonTint="@color/primary"
+                                    android:gravity="center" />
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+                                    android:buttonTint="@color/primary"
+                                    android:gravity="center" />
+
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+                                    android:buttonTint="@color/primary"
+                                    android:gravity="center" />
+                            </RadioGroup>
+
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:background="#FCFBFB"
+                            android:orientation="horizontal">
+
+                            <com.common.view.CBTextView
+                                style="@style/txt_000_12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp20"
+                                android:layout_marginTop="@dimen/dp2"
+                                android:layout_marginBottom="@dimen/dp2"
+                                android:layout_weight="4"
+                                android:paddingTop="@dimen/dp8"
+                                android:paddingBottom="@dimen/dp8"
+                                android:text="Speed of service"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/sp10" />
+
+                            <RadioGroup
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+                                    android:buttonTint="@color/primary"
+                                    android:gravity="center" />
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+
+                                    android:buttonTint="@color/primary"
+                                    android:gravity="center" />
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+                                    android:buttonTint="@color/primary"
+                                    android:gravity="center" />
+
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+                                    android:buttonTint="@color/primary"
+                                    android:gravity="center" />
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:background="#FCFBFB"
+                            android:orientation="horizontal">
+
+                            <com.common.view.CBTextView
+                                style="@style/txt_000_12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp20"
+                                android:layout_marginTop="@dimen/dp2"
+                                android:layout_marginBottom="@dimen/dp2"
+                                android:layout_weight="4"
+                                android:paddingTop="@dimen/dp8"
+                                android:paddingBottom="@dimen/dp8"
+                                android:text="Value of money"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/sp10" />
+
+                            <RadioGroup
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+                                    android:buttonTint="@color/primary"
+                                    android:gravity="center" />
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+
+                                    android:buttonTint="@color/primary"
+                                    android:gravity="center" />
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+                                    android:buttonTint="@color/primary"
+                                    android:gravity="center" />
+
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+                                    android:buttonTint="@color/primary"
+                                    android:gravity="center" />
+                            </RadioGroup>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:background="#FCFBFB"
+                            android:orientation="horizontal">
+
+                            <com.common.view.CBTextView
+                                style="@style/txt_000_12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp20"
+                                android:layout_marginTop="@dimen/dp2"
+                                android:layout_marginBottom="@dimen/dp2"
+                                android:layout_weight="4"
+                                android:paddingTop="@dimen/dp8"
+                                android:paddingBottom="@dimen/dp8"
+                                android:text="Overall Experience"
+                                android:textColor="@color/primary"
+                                android:textSize="@dimen/sp10" />
+
+                            <RadioGroup
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="2"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+                                    android:buttonTint="@color/primary"
+                                    android:gravity="center" />
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+
+                                    android:buttonTint="@color/primary"
+                                    android:gravity="center" />
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+                                    android:buttonTint="@color/primary"
+                                    android:gravity="center" />
+
+
+                                <RadioButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.5"
+                                    android:buttonTint="@color/primary"
+                                    android:gravity="center" />
+                            </RadioGroup>
+
+                        </TableRow>
+
+                    </TableLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.common.view.CTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp25"
+                android:layout_marginTop="@dimen/dp25"
+                android:text="Remarks"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/sp12" />
+
+            <com.common.view.CEditTextView
+                style="@style/txt_999_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp15"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp20"
+                android:background="@drawable/ic_rectangle_1"
+                android:hint=""
+                android:inputType="textEmailAddress"
+                android:paddingLeft="@dimen/dp20"
+                android:textColor="@color/txt_color" />
+
+            <com.common.view.CBButtonViewM
+                android:id="@+id/btnSubmitFeedback"
+                style="@style/LightFlatWaveColorButtonRippleStyle_22"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:layout_margin="@dimen/dp20"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/btn_bg_"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp18" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
+

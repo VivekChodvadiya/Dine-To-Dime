@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <include layout="@layout/topbar" />
+
+        </FrameLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_140sdp"
+                    android:layout_height="@dimen/_140sdp"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:src="@drawable/ic_checked_filled" />
+
+                <com.common.view.CBTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:text=" ₹540"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/sp28" />
+
+                <com.common.view.CBTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:text=" Payment Received Successfully."
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/sp18" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp25"
+            android:layout_marginTop="@dimen/dp10">
+
+
+            <com.common.view.CBTextView
+                android:id="@+id/btnBackFromPay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_weight="0.4"
+                android:background="@drawable/round_border_primary"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp5"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp5"
+                android:text="Back"
+                android:textSize="@dimen/sp11" />
+
+            <com.common.view.CBButtonViewM
+                android:id="@+id/btnFeedback"
+                style="@style/LightFlatWaveColorButtonRippleStyle_22"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginLeft="@dimen/dp25"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_"
+                android:text="Customer Feedback"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp18" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

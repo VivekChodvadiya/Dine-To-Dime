@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+                <include layout="@layout/topbar" />
+
+            </FrameLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:id="@+id/llPlaceHolderTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="#FCFBFB"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp10">
+
+                        <com.common.view.CTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Table No. 2 (Ground Fl.)"
+                            android:textColor="@color/primary"
+                            android:textSize="@dimen/sp14" />
+
+                        <com.common.view.CTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8 Person"
+                            android:textColor="@color/primary"
+                            android:textSize="@dimen/sp14" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dp10">
+
+                        <com.common.view.CBTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Assigned To : "
+                            android:textColor="@color/primary"
+                            android:textSize="@dimen/sp14" />
+
+                        <com.common.view.CTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kushal Kshatriya"
+                            android:textColor="@color/primary"
+                            android:textSize="@dimen/sp14" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp10">
+
+                        <com.common.view.CEditTextView
+                            style="@style/txt_999_18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/ic_rectangle_1"
+                            android:hint="Customer Name"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="@dimen/dp20"
+                            android:textColor="@color/txt_color" />
+
+                        <com.common.view.CEditTextView
+                            style="@style/txt_999_18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:background="@drawable/ic_rectangle_1"
+                            android:hint="Contact No"
+                            android:inputType="textEmailAddress"
+                            android:paddingLeft="@dimen/dp20"
+                            android:textColor="@color/txt_color" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dp3"
+                    android:layout_marginRight="@dimen/dp3"
+                    android:orientation="vertical">
+
+                    <TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <com.common.view.CBTextView
+                            style="@style/txt_000_12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp2"
+                            android:layout_marginBottom="@dimen/dp2"
+                            android:layout_weight="2"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/dp8"
+                            android:paddingBottom="@dimen/dp8"
+                            android:text="Item Desc"
+                            android:textColor="@color/primary" />
+
+                        <com.common.view.CBTextView
+                            style="@style/txt_000_12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp2"
+                            android:layout_marginBottom="@dimen/dp2"
+                            android:layout_weight="1.5"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/dp8"
+                            android:paddingBottom="@dimen/dp8"
+                            android:text="Rate"
+                            android:textColor="@color/primary" />
+
+                        <com.common.view.CBTextView
+                            style="@style/txt_000_12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp2"
+                            android:layout_marginBottom="@dimen/dp2"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/dp8"
+                            android:paddingBottom="@dimen/dp8"
+                            android:text="Qty"
+                            android:textColor="@color/primary" />
+
+                        <com.common.view.CBTextView
+                            style="@style/txt_000_12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp2"
+                            android:layout_marginBottom="@dimen/dp2"
+                            android:layout_weight="1"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/dp8"
+                            android:paddingBottom="@dimen/dp8"
+                            android:text="Amount"
+                            android:textColor="@color/primary" />
+
+                    </TableRow>
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerViewOrderItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"
+                        tools:listitem="@layout/item_order_invoice" />
+
+                </TableLayout>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <include layout="@layout/cart_bottomview_payment" />
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<agency.tango.materialintroscreen.parallax.ParallaxLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/onboarding_screen_1" />
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_marginLeft="@dimen/dp10"-->
+    <!--android:layout_marginTop="@dimen/dp28"-->
+    <!--android:layout_marginRight="@dimen/dp10"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="vertical">-->
+
+    <!--&lt;!&ndash;<FrameLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="horizontal">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="@dimen/_180sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="@mipmap/second_intro_square"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="@dimen/dp150"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="@dimen/dp150"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:src="@mipmap/second_intro_img" />&ndash;&gt;-->
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="@dimen/_180sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="right"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginTop="@dimen/_110sdp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="@mipmap/second_intro_square"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="@dimen/dp150"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="@dimen/dp150"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:src="@mipmap/second_intro_img" />&ndash;&gt;-->
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</FrameLayout>&ndash;&gt;-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:src="@drawable/last_board_1" />-->
+
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dp160"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:background="#474556"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<com.common.view.CBTextView-->
+    <!--style="@style/txt_fff_18"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="@dimen/dp10"-->
+    <!--android:text="Hotel Areas" />-->
+
+    <!--<com.common.view.CTextView-->
+    <!--style="@style/txt_fff_18"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/dp10"-->
+    <!--android:layout_marginBottom="@dimen/dp10"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="@dimen/dp10"-->
+    <!--android:text="Big Or Small No Matter the Size, \n Manage all your areas in One Place" />-->
+
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+
+</agency.tango.materialintroscreen.parallax.ParallaxLinearLayout>

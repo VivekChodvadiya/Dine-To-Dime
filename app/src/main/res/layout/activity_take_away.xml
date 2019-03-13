@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <include layout="@layout/topbar" />
+
+        </FrameLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.common.view.CTextView
+                style="@style/txt_000_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp2"
+                android:layout_marginRight="@dimen/dp12"
+                android:layout_marginBottom="@dimen/dp2"
+                android:paddingTop="@dimen/dp8"
+                android:paddingBottom="@dimen/dp8"
+                android:text="Home Delivery / Take Way"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/sp12" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_marginBottom="@dimen/dp5"
+                android:background="#F0EFEF" />
+
+            <com.common.view.CEditTextView
+                android:id="@+id/editPersonName"
+                style="@style/txt_999_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp12"
+                android:background="@drawable/ic_rectangle_1"
+                android:hint="Customer Name"
+                android:inputType="text"
+                android:paddingLeft="@dimen/dp20"
+                android:textColor="@color/txt_color" />
+
+            <com.common.view.CEditTextView
+                android:id="@+id/editPersonContact"
+                style="@style/txt_999_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp12"
+                android:background="@drawable/ic_rectangle_1"
+                android:hint="Contact No"
+                android:inputType="number"
+                android:paddingLeft="@dimen/dp20"
+                android:textColor="@color/txt_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10">
+
+                <com.common.view.CTextView
+                    style="@style/txt_000_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp12"
+                    android:layout_marginTop="@dimen/dp2"
+                    android:layout_marginRight="@dimen/dp12"
+                    android:layout_marginBottom="@dimen/dp2"
+                    android:paddingTop="@dimen/dp8"
+                    android:paddingBottom="@dimen/dp8"
+                    android:text="Is HomeDelivery ?"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/sp12" />
+
+                <Switch
+                    android:id="@+id/switchIsHomwDel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+            <com.common.view.CEditTextView
+                android:id="@+id/editPickUpTime"
+                style="@style/txt_999_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp12"
+                android:background="@drawable/ic_rectangle_1"
+                android:drawableRight="@drawable/ic_calender"
+                android:hint="Pickup Time"
+                android:inputType="text"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingRight="@dimen/dp20"
+                android:textColor="@color/txt_color" />
+
+            <com.common.view.CEditTextView
+                android:id="@+id/editDelAddress"
+                style="@style/txt_999_18"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp140"
+                android:layout_marginLeft="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp12"
+                android:background="@drawable/ic_rectangle_1"
+                android:gravity="top"
+                android:hint="Delivery Address"
+                android:inputType="text"
+                android:padding="@dimen/dp20"
+                android:paddingLeft="@dimen/dp20"
+                android:textColor="@color/txt_color" />
+
+            <com.common.view.CEditTextView
+                android:id="@+id/editContainerCharges"
+                style="@style/txt_999_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp12"
+                android:background="@drawable/ic_rectangle_1"
+                android:hint="Container Charges"
+                android:inputType="text"
+                android:paddingLeft="@dimen/dp20"
+                android:textColor="@color/txt_color" />
+
+            <com.common.view.CEditTextView
+                android:id="@+id/editDelCharges"
+                style="@style/txt_999_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp12"
+                android:background="@drawable/ic_rectangle_1"
+                android:hint="Delivery Charges"
+                android:inputType="text"
+                android:paddingLeft="@dimen/dp20"
+                android:textColor="@color/txt_color" />
+
+            <com.common.view.CEditTextView
+                android:id="@+id/editPersonForDel"
+                style="@style/txt_999_18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp12"
+                android:background="@drawable/ic_rectangle_1"
+                android:hint="Person Going for Delivery"
+                android:inputType="text"
+                android:paddingLeft="@dimen/dp20"
+                android:textColor="@color/txt_color" />
+
+            <com.common.view.CBButtonViewM
+                android:id="@+id/btnSelectMenu"
+                style="@style/LightFlatWaveColorButtonRippleStyle_22"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                android:layout_marginLeft="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginRight="@dimen/dp12"
+                android:layout_marginBottom="@dimen/dp20"
+                android:background="@drawable/btn_bg_"
+                android:text="SELECT MENU"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp18" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

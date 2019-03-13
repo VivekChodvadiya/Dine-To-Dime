@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/login_bg_" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/login_bg_back" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginTop="@dimen/dp70"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_ellipse_login" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp150"
+                    android:layout_height="@dimen/dp150"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/dp25"
+                    android:src="@mipmap/logo_verticle" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp15"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/dp15">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.common.view.CBTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:gravity="center"
+                    android:text="Forgot password?"
+                    android:textColor="@color/txt_color"
+                    android:textSize="@dimen/sp14" />
+
+                <com.common.view.CTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:gravity="center"
+                    android:text="Don't worry give us your username &amp; we will \n help to recover"
+                    android:textColor="@color/txt_color" />
+
+                <com.common.view.CEditTextView
+                    style="@style/txt_999_18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:background="@drawable/ic_rectangle_1"
+                    android:hint="Username"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="@dimen/dp20"
+                    android:textColor="@color/txt_color" />
+
+                <com.common.view.CBButtonViewM
+                    android:id="@+id/btnSubimtPass"
+                    style="@style/LightFlatWaveColorButtonRippleStyle_22"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:background="@drawable/btn_bg_"
+                    android:text="Submit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp50"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/dp10">
+
+                <LinearLayout
+                    android:id="@+id/llBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp20"
+                        android:layout_height="@dimen/dp20"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_left_arrow" />
+
+                    <com.common.view.CBTextView
+                        style="@style/txt_000_18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="@dimen/sp16"
+                        android:layout_marginLeft="@dimen/dp8"
+                        android:text="@string/back_to_login_page"
+                        android:textColor="@color/txt_color" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
